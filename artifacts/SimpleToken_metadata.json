@@ -200,7 +200,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleToken.sol": "SimpleToken"
+			"contracts/lesson2.1/SimpleToken.sol": "SimpleToken"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -214,7 +214,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleToken.sol": {
+		"contracts/lesson2.1/SimpleToken.sol": {
 			"keccak256": "0x9b780142eceb5ca5c87d9a4079cee2fe8ee41ecf24b429b745cc3a4226817471",
 			"license": "MIT",
 			"urls": [
