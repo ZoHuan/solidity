@@ -10,23 +10,53 @@
 				"inputs": [
 					{
 						"indexed": true,
-						"internalType": "address",
-						"name": "voter",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "proposalId",
+						"type": "uint256"
 					},
 					{
 						"indexed": false,
-						"internalType": "enum VotingSystem.Vote",
-						"name": "vote",
-						"type": "uint8"
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					}
+				],
+				"name": "ProposalCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "proposalId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "voter",
+						"type": "address"
 					}
 				],
 				"name": "Voted",
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "abstainCount",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duration",
+						"type": "uint256"
+					}
+				],
+				"name": "createProposal",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -34,40 +64,38 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getMyVote",
-				"outputs": [
-					{
-						"internalType": "enum VotingSystem.Vote",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getResults",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "proposalId",
+						"type": "uint256"
+					}
+				],
+				"name": "getProposalInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "deadline",
 						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "bool",
+						"name": "executed",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -75,11 +103,11 @@
 			},
 			{
 				"inputs": [],
-				"name": "getTotalVotes",
+				"name": "getWinningProposal",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "winningProposalId",
 						"type": "uint256"
 					}
 				],
@@ -89,8 +117,13 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "proposalId",
+						"type": "uint256"
+					},
+					{
 						"internalType": "address",
-						"name": "",
+						"name": "voter",
 						"type": "address"
 					}
 				],
@@ -107,7 +140,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "noCount",
+				"name": "proposalCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -121,46 +154,48 @@
 			{
 				"inputs": [
 					{
-						"internalType": "enum VotingSystem.Vote",
-						"name": "_vote",
-						"type": "uint8"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "executed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "proposalId",
+						"type": "uint256"
 					}
 				],
 				"name": "vote",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "votes",
-				"outputs": [
-					{
-						"internalType": "enum VotingSystem.Vote",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "yesCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -177,7 +212,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/VotingSystem.sol": "VotingSystem"
+			"contracts/lesson3.2/VotingSystem.sol": "VotingSystem"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -191,12 +226,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/VotingSystem.sol": {
-			"keccak256": "0x78a71cfbeab4d2a48feb7e71ff908cf864146466642fb726b5238a846290c500",
+		"contracts/lesson3.2/VotingSystem.sol": {
+			"keccak256": "0xfd7e5e6eb4aa89d0419ca3c9f9f9cc14b318c24cfd05c4fc809c24cf33cba768",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cdba9f16d4df7085e34df3a91a5d74909a7b2982c800a84041f8a4cb439e93c0",
-				"dweb:/ipfs/QmdZxKH6wQUXgZMcw9zxy6smY9cY8nKP1d92ieoLuq6jDy"
+				"bzz-raw://6762cfec2404a838fac5f8b35080411ba29a46969a76b95e34b13ee5d8d70d42",
+				"dweb:/ipfs/QmfBui9MxQcih4B38hjqh2QUxQsm67DRJnDpYqWY5gK7ub"
 			]
 		}
 	},
