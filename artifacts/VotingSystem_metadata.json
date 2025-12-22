@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -19,6 +24,12 @@
 						"internalType": "string",
 						"name": "description",
 						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
 					}
 				],
 				"name": "ProposalCreated",
@@ -52,18 +63,12 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "duration",
+						"name": "durationDays",
 						"type": "uint256"
 					}
 				],
 				"name": "createProposal",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -94,7 +99,7 @@
 					},
 					{
 						"internalType": "bool",
-						"name": "executed",
+						"name": "hasEnded",
 						"type": "bool"
 					}
 				],
@@ -103,7 +108,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getWinningProposal",
+				"name": "getWinner",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -118,12 +123,12 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "proposalId",
+						"name": "",
 						"type": "uint256"
 					},
 					{
 						"internalType": "address",
-						"name": "voter",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -133,6 +138,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -178,7 +196,7 @@
 					},
 					{
 						"internalType": "bool",
-						"name": "executed",
+						"name": "exists",
 						"type": "bool"
 					}
 				],
@@ -212,7 +230,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson3.2/VotingSystem.sol": "VotingSystem"
+			"contracts/lesson4.1/VotingSystem.sol": "VotingSystem"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -226,12 +244,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson3.2/VotingSystem.sol": {
-			"keccak256": "0xfd7e5e6eb4aa89d0419ca3c9f9f9cc14b318c24cfd05c4fc809c24cf33cba768",
+		"contracts/lesson4.1/VotingSystem.sol": {
+			"keccak256": "0x28922185d8623ff0d3972c1deb19d92d1194826d9e6278ce5b769e62b4c096b6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6762cfec2404a838fac5f8b35080411ba29a46969a76b95e34b13ee5d8d70d42",
-				"dweb:/ipfs/QmfBui9MxQcih4B38hjqh2QUxQsm67DRJnDpYqWY5gK7ub"
+				"bzz-raw://5356a3968ecf754e46abb04cf4ab16f6a3c4e9b2c886b0666f6ca239bc0f838f",
+				"dweb:/ipfs/QmYzRAkeZoUdNyu2YPqqjTbmjWefHEeDxgVZSebd1byifC"
 			]
 		}
 	},
