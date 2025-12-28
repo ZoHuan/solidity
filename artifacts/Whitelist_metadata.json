@@ -6,37 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
 						"internalType": "address",
-						"name": "previousOwner",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "newOwner",
+						"name": "account",
 						"type": "address"
 					}
 				],
-				"name": "OwnershipTransferred",
-				"type": "event"
+				"name": "addToWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "owner",
+				"name": "getWhitelistSize",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -46,11 +35,30 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "newOwner",
+						"name": "account",
 						"type": "address"
 					}
 				],
-				"name": "transferOwnership",
+				"name": "isWhitelisted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeFromWhitelist",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -69,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson6.1/Ownable.sol": "Ownable"
+			"contracts/lesson6.2/Whitelist.sol": "Whitelist"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -83,12 +91,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson6.1/Ownable.sol": {
-			"keccak256": "0x5d8ead66e973bcafec2f6e426c08c78bd3efc489e8e741530e78ebc90ad0d82b",
+		"contracts/lesson6.2/Whitelist.sol": {
+			"keccak256": "0x12347fc262b09636bab0008f65b3251fcbfc1a228a666c68e92e09668de8daa0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd4d0053e29fa9759bb3e02d1442e46f6c5dd8aba60f324f7c9d0edcbee276ea",
-				"dweb:/ipfs/QmejJyw52M3kyCw2p73aT4hmzgCusJPLscAb7qoqisHSfm"
+				"bzz-raw://d3b283cf0a81a0e65f6a1e4acd65a1e42553006cf876cee8ee558a94345dbadc",
+				"dweb:/ipfs/QmXoiJes7Y1Bt7new4HHaQNbQMWxdzrGqSTokVVA7dUi4T"
 			]
 		}
 	},

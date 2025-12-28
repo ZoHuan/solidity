@@ -726,11 +726,11 @@
 			]
 		},
 		"contracts/lesson5.1/MyTokenOpenZeppelin.sol": {
-			"keccak256": "0x4de66faa91e8bfa3c54c232592b4a7ca867eff76817bf6125e8f44fde2b5289b",
+			"keccak256": "0x9977894cdb3968fbdf025f1251f095eaaabc2f846cae61d339d52252be537c51",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://731a71cf44f3abfe443b6de295158f82c68465ac658486d3856b9a63e36feea0",
-				"dweb:/ipfs/QmRhnwBGDYMkVaPaXzQbJFys4w51GTpEQ1YBq4sm6sqCM7"
+				"bzz-raw://517762e05e51070c627aa4b8877c718b62917d82410d65e0c5f8aeacf4aa956c",
+				"dweb:/ipfs/QmYmxvjzPySBkYH2WhmFd13Gzazez37uWmtgNbDS7EogGM"
 			]
 		}
 	},

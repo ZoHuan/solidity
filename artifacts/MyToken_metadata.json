@@ -602,11 +602,11 @@
 			]
 		},
 		"contracts/lesson6.1/MyToken.sol": {
-			"keccak256": "0x51f28c273576f6a151ae8255db78b460a866eb4fb7d9e0937e42d2aa7a75c1c8",
+			"keccak256": "0xe1e0806e4c04176425566e1536ea9d7e4253859fe9c7620eaa65073dea54d17a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9e72af25d6d6b1231d3f4d23ab1fa838a65e04516dcedd694f8b808622bf8ba2",
-				"dweb:/ipfs/QmVaft8S2KSLNXPbGJDi2UeNUNhZ4X8TLXhNEit3FnLB3G"
+				"bzz-raw://c67beb1bd79c69ddea4f1870e8962b296637896b7fa99161b04263872235ac8e",
+				"dweb:/ipfs/QmeUy4uQurHdwATXkrtdydb2WWShUfXLXXxGSBfeZKcZxD"
 			]
 		}
 	},

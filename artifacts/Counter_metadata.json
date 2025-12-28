@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decrement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reset",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lesson6.2/Counter.sol": "Counter"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lesson6.2/Counter.sol": {
+			"keccak256": "0xff3fbefe612cddbbf3525a0ef02fa93d8bc6fb935ba19c907d927b728ac48c46",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cdac1ae70d3f1e90189cc2ccdff8f818191d948d1f84f35e00c3a6de2da2a7fc",
+				"dweb:/ipfs/Qma8XVtdSk2TAKswB6ErpvWmnrTRghyCEDSQnbWw8PJ6NK"
+			]
+		}
+	},
+	"version": 1
+}

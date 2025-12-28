@@ -91,11 +91,11 @@
 	},
 	"sources": {
 		"contracts/lesson6.1/Animal.sol": {
-			"keccak256": "0xb60bf501107901c69de9d31fe2270888049413259a6a0ba8ec9d2de895b47ea1",
+			"keccak256": "0x0cfd9f58b6977d0358ce9a79d81b9c4b5d4f539727b8926f11853f27e1eba32c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ad3a3f5202650ba1d2a28f975e31d008814ea355197707aec13fcb865cdef2ce",
-				"dweb:/ipfs/QmXLWU5DkxgbgESYQnb4cTFJz659hRivv2YxM7rqKLU52a"
+				"bzz-raw://c5446a8ba5b5b74b5c3ffad1a4db2172358245e490a19a9ec21b3128f05533b6",
+				"dweb:/ipfs/QmQZ9heewGtn6KLE75ZbSnoACEKQ6jypmZ9snnTx83sfd9"
 			]
 		}
 	},

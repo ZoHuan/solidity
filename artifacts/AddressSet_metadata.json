@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lesson6.2/Whitelist.sol": "AddressSet"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lesson6.2/Whitelist.sol": {
+			"keccak256": "0x12347fc262b09636bab0008f65b3251fcbfc1a228a666c68e92e09668de8daa0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d3b283cf0a81a0e65f6a1e4acd65a1e42553006cf876cee8ee558a94345dbadc",
+				"dweb:/ipfs/QmXoiJes7Y1Bt7new4HHaQNbQMWxdzrGqSTokVVA7dUi4T"
+			]
+		}
+	},
+	"version": 1
+}

@@ -165,7 +165,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson4.2/AdvancedCrowdfunding.sol": "SimpleShop"
+			"contracts/lesson4.2/SimpleShop.sol": "SimpleShop"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -179,7 +179,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson4.2/AdvancedCrowdfunding.sol": {
+		"contracts/lesson4.2/SimpleShop.sol": {
 			"keccak256": "0x141c2914e8a2f6db920e722a826ac926eacc43fd3f9890fae9857f14e8773bee",
 			"license": "MIT",
 			"urls": [

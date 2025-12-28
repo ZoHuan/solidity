@@ -158,11 +158,11 @@
 	},
 	"sources": {
 		"contracts/lesson6.1/Ownable.sol": {
-			"keccak256": "0x921f52accaa75fe3f58d6b947a0ecffd4a21b555e73c8b555c578599cb2abb71",
+			"keccak256": "0x5d8ead66e973bcafec2f6e426c08c78bd3efc489e8e741530e78ebc90ad0d82b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9dad29dac71abbb941d65096dced76ce169bd12165bc8f69e1339a42ec927cc8",
-				"dweb:/ipfs/QmbWuvy8vWooJomQSYian4UHweb1YTwxhY312FimGTysCX"
+				"bzz-raw://fd4d0053e29fa9759bb3e02d1442e46f6c5dd8aba60f324f7c9d0edcbee276ea",
+				"dweb:/ipfs/QmejJyw52M3kyCw2p73aT4hmzgCusJPLscAb7qoqisHSfm"
 			]
 		}
 	},
