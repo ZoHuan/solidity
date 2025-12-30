@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "MessagePosted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "postMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lesson7.1/MessageBoard.sol": "MessageBoard"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lesson7.1/MessageBoard.sol": {
+			"keccak256": "0xd4a1d6ce1299a1972e9a083389b17237d772d5a007a32ce83e6fbd4d5a20e189",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8072df92d3b1f89d12a725d3cc61e67f3c2c0fe4ac7e32975a1ae8d0b045dacd",
+				"dweb:/ipfs/QmcXsCRfx5cGG68hXuP6eGuhvT3xWJbFgoSDzTraQ23kov"
+			]
+		}
+	},
+	"version": 1
+}
