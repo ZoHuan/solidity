@@ -125,8 +125,9 @@ contract OrderSystem {
         order.status = OrderStatus.Cancelled;
         
         // 退款
-        if (order.status == OrderStatus.Paid) {
-            payable(order.buyer).transfer(order.amount);
+       if (order.status == OrderStatus.Paid) {
+        (bool success, ) = payable(order.buyer).call{value: order.amount}("");
+        require(success, "Refund failed");
         }
         
         // 触发取消事件
