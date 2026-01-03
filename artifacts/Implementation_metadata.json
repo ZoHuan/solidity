@@ -6,19 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [],
-				"name": "count",
+				"name": "getValue",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -31,9 +20,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "increment",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "implementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -44,6 +39,32 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "setValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -63,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson8.1/CounterFactory.sol": "Counter"
+			"contracts/lesson8.1/Proxy.sol": "Implementation"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -77,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson8.1/CounterFactory.sol": {
-			"keccak256": "0x3112431f84d7220cbaedfa06e438c87f1cb3ff30a1eb3f8ed06fc816f0724d53",
+		"contracts/lesson8.1/Proxy.sol": {
+			"keccak256": "0xd35dcab8e090e2d739260654edb46e511c35e0212b6f29bc6a6a52b2a46dda4e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bd7b795339ec3da631358d7fe48b34e3c8e844e18d4d38b21922a9783f636a89",
-				"dweb:/ipfs/QmWApemmCgmTMMSZ4a9gGksEEhDF7Jwf76U6em9LUiPskJ"
+				"bzz-raw://23299953a0ead3904ff6e4e9b045d93d336cd94e47dfd383aa66d7cc77240a62",
+				"dweb:/ipfs/QmYGTSGzMGToRCJZhpcEbMqJYhdAywJszjQ9za2Nje3sFa"
 			]
 		}
 	},

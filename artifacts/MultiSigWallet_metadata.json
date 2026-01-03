@@ -14,7 +14,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "_requiredApprovals",
+						"name": "_required",
 						"type": "uint256"
 					}
 				],
@@ -22,87 +22,43 @@
 				"type": "constructor"
 			},
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "MultiSigTxs",
+				"outputs": [
+					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "to",
 						"type": "address"
 					},
 					{
-						"indexed": true,
 						"internalType": "uint256",
-						"name": "txId",
+						"name": "value",
 						"type": "uint256"
-					}
-				],
-				"name": "ApproveTransaction",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
 					},
 					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "Deposit",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "uint256",
-						"name": "txId",
-						"type": "uint256"
-					}
-				],
-				"name": "ExecuteTransaction",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
 					},
 					{
-						"indexed": true,
-						"internalType": "uint256",
-						"name": "txId",
-						"type": "uint256"
-					}
-				],
-				"name": "RevokeApproval",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
+						"internalType": "bool",
+						"name": "executed",
+						"type": "bool"
+					},
 					{
-						"indexed": true,
 						"internalType": "uint256",
-						"name": "txId",
+						"name": "confirmations",
 						"type": "uint256"
 					}
 				],
-				"name": "SubmitTransaction",
-				"type": "event"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -112,7 +68,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "approveTransaction",
+				"name": "confirm",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -130,7 +86,7 @@
 						"type": "address"
 					}
 				],
-				"name": "approved",
+				"name": "confirmations",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -149,7 +105,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "executeTransaction",
+				"name": "execute",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -194,7 +150,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "requiredApprovals",
+				"name": "required",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -223,48 +179,16 @@
 						"type": "bytes"
 					}
 				],
-				"name": "submitTransaction",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "submit",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "transactions",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bytes",
-						"name": "data",
-						"type": "bytes"
-					},
-					{
-						"internalType": "bool",
-						"name": "executed",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -280,7 +204,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson3.3/MultiSigWallet.sol": "MultiSigWallet"
+			"contracts/lesson8.1/MultiSigWallet.sol": "MultiSigWallet"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -294,12 +218,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson3.3/MultiSigWallet.sol": {
-			"keccak256": "0x21196749edd6439a2e277415bfc38152cd2f753d8a9a72133eb5c7c716137b17",
+		"contracts/lesson8.1/MultiSigWallet.sol": {
+			"keccak256": "0x83a2475f228a2189adf93ef7f6fe672d764fa74a52b24ac4355864f7c337c229",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d11410ea6fd03b13821f20b342a385f9e0f30da35ef92ef48216fca67dde1994",
-				"dweb:/ipfs/QmawgktRYfeiB3Ekp1MT9utqnUZrjaL92Wwon1dGGR2ezL"
+				"bzz-raw://f9b337bfee76227050e7a3b51f4eeb89e3406c3829a7f8c0e7a84e586ee54cef",
+				"dweb:/ipfs/QmV7RidnYU8MX5C9ChCsomvqzpHxfycyAbUrtHW1GhH3Zt"
 			]
 		}
 	},

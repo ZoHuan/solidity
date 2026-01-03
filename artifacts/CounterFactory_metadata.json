@@ -6,39 +6,38 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "address",
-						"name": "_owner",
+						"name": "counterAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "salt",
+						"type": "bytes32"
+					}
+				],
+				"name": "CounterCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "salt",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "deployer",
 						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "count",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "increment",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
+				"name": "computeAddress",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -47,6 +46,25 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "salt",
+						"type": "bytes32"
+					}
+				],
+				"name": "createWithCreate2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -63,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson8.1/CounterFactory.sol": "Counter"
+			"contracts/lesson8.1/CounterFactory.sol": "CounterFactory"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

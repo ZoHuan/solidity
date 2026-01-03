@@ -6,42 +6,20 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
 						"internalType": "address",
-						"name": "user",
+						"name": "_tokenA",
 						"type": "address"
 					},
 					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "reason",
-						"type": "string"
-					}
-				],
-				"name": "SwapFailed",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
 						"internalType": "address",
-						"name": "user",
+						"name": "_tokenB",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "bytes",
-						"name": "errorData",
-						"type": "bytes"
 					}
 				],
-				"name": "SwapFailedCustom",
-				"type": "event"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
 				"anonymous": false,
@@ -55,82 +33,56 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "errorCode",
-						"type": "uint256"
-					}
-				],
-				"name": "SwapFailedPanic",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "user",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "tokenIn",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "tokenOut",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "amountIn",
+						"name": "amountA",
 						"type": "uint256"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amountOut",
+						"name": "amountB",
 						"type": "uint256"
 					}
 				],
-				"name": "SwapSuccess",
+				"name": "Swap",
 				"type": "event"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "tokenIn",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "tokenOut",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "amountIn",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountOut",
+						"name": "amountA",
 						"type": "uint256"
 					}
 				],
 				"name": "swap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenA",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "contract IERC20",
 						"name": "",
-						"type": "bool"
+						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenB",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -141,17 +93,13 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"swap(address,address,uint256,uint256)": {
-					"notice": "交换代币"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson7.2/IERC20.sol": "TokenSwap"
+			"contracts/lesson8.1/TokenSwap.sol": "TokenSwap"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -165,12 +113,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson7.2/IERC20.sol": {
-			"keccak256": "0xc14032651c6070f1d71e1e52ed3c79d1645754bb52045ef293ca342828be20ca",
+		"contracts/lesson8.1/TokenSwap.sol": {
+			"keccak256": "0x7b6ff14b3d11ba7ed5875a61bb094a4f715452cf2517b19381a6c450a40836b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a6effdbe92cc05276ed89a49e4b061ee8427681f28f9692eef645842962365b8",
-				"dweb:/ipfs/QmRZXa7nKazYkiUqrwVdsgjgd6JnFcvbH2sjreGQRt6SRE"
+				"bzz-raw://44b507b6a801b2e1dc880f9c2435fd86fe68a2822dcf1a04bcba249e1f4be305",
+				"dweb:/ipfs/QmX1zzeCjP1tbSsrPrNunRXj1hp1ZpQhakchpvLXUKxGtX"
 			]
 		}
 	},

@@ -9,6 +9,25 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
@@ -72,7 +91,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lesson7.2/IERC20.sol": "IERC20"
+			"contracts/lesson8.1/TokenSwap.sol": "IERC20"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -86,12 +105,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lesson7.2/IERC20.sol": {
-			"keccak256": "0xc14032651c6070f1d71e1e52ed3c79d1645754bb52045ef293ca342828be20ca",
+		"contracts/lesson8.1/TokenSwap.sol": {
+			"keccak256": "0x7b6ff14b3d11ba7ed5875a61bb094a4f715452cf2517b19381a6c450a40836b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a6effdbe92cc05276ed89a49e4b061ee8427681f28f9692eef645842962365b8",
-				"dweb:/ipfs/QmRZXa7nKazYkiUqrwVdsgjgd6JnFcvbH2sjreGQRt6SRE"
+				"bzz-raw://44b507b6a801b2e1dc880f9c2435fd86fe68a2822dcf1a04bcba249e1f4be305",
+				"dweb:/ipfs/QmX1zzeCjP1tbSsrPrNunRXj1hp1ZpQhakchpvLXUKxGtX"
 			]
 		}
 	},
